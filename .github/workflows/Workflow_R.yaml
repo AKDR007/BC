@@ -4,7 +4,7 @@
 # AUTO CI/CD PIPELINE FOR BUILDING AND RELEASING THE LATEST
 # APP VERSION IN GITHUB IN THE RELEASE PAGE
 
-# RELEASE PAGE URL : https://github.com/AKDR007/BC/releases
+# RELEASE PAGE URL : https://github.com/AKDR007/Rikshaw/releases
 
 name: Build APK
 
@@ -109,7 +109,7 @@ jobs:
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
@@ -119,4 +119,4 @@ jobs:
           asset_name: BC.apk
           asset_content_type: application/vnd.android.package-archive
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
