@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
   final String api =
       "https://airquality.googleapis.com/v1/currentConditions:lookup?key=AIzaSyATE5bKvh_hOiLN-rTpDSZJD0Byrw8eL3c";
   String res = "";

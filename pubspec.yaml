@@ -20,3 +20,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - Assets/Icons/AppIcon.png
+
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "Assets/Icons/AppIcon.png"
