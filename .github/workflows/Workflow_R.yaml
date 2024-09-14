@@ -109,7 +109,7 @@ jobs:
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_SEC_TOK }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
@@ -119,4 +119,4 @@ jobs:
           asset_name: BC.apk
           asset_content_type: application/vnd.android.package-archive
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_SEC_TOK }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
